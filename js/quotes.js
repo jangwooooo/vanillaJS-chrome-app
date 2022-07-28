@@ -24,10 +24,6 @@ const quotes = [
         author: "Walt Disney",
     },
     {
-        quote: "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.",
-        author: "Albert Schweitzer",
-    },
-    {
         quote: "Success seems to be connected with action. Successful people keep moving.",
         author: "Conrad Hilton",
     },
@@ -46,4 +42,4 @@ const author = document.querySelector("#quote span:last-child");
 const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
 quote.innerText = todaysQuote.quote;
-author.innerText = todaysQuote.author;
+author.innerText = `-${todaysQuote.author}-`;
